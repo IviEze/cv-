@@ -5,37 +5,225 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="cv.css">
 
 </head>
 <body>
+  <div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas-header">
+      <button style="margin-left: 325px;" type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container mt-3">
+        <img id="img" src="yo.jpg" class="rounded-circle d-block mx-auto img-thumbnail" alt="Imagen de Ivan Bernardo" style="margin-top: 1px;" width="150px" height="70px">
+      </div>
+      <h2 style="text-align: center;"><u>Sobre mi</u></h2>
+      <br>
+      <h5 style="text-align: center;"><u>Ivan Bernardo</u></h5>
+      <br>
+      <br>
+      <p>Mi nombre es Ivan Bernardo. Me considero una persona extrovertida, con facildiad para socializar.
+        Puedo adaptarme a distintos ambitos de trabajo, tratando de hacer el labor de manera eficiente y colectiva.
+        Tengo todas las intenciones de progresar en lo que estoy aprendiendo y poder aquirir la experiencia necesaria requerida en esta area del trabajo.
+      </p>
+      <div class="lineas"></div>
+      <br>
+        <h5 class="titulos"><u>Mi contacto:</u></h5>
+        
+        <ul>
+          <li><u><b>Mail: </b></u></li>
+          <p class="clave">
+            <a href="mailto:ivieze090@gmail.com">ivieze090@gmail.com</a>
+          </p>
+
+          <li><u><b>Telefono: </b></u></li>
+          <p class="clave">
+            <a href="tel:+1161867816">11 6186-7816</a>
+          </p>
+
+          <li><u><b>Direccion: </b></u></li>
+          <p class="clave">
+            <a href="https://www.google.com/maps/place/Burj+Khalifa/@25.1966179,55.2744269,19.54z/data=!4m13!1m7!3m6!1s0x3e5f43496ad9c645:0xbde66e5084295162!2sDub%C3%A1i+-+Emiratos+%C3%81rabes+Unidos!3b1!8m2!3d25.2048493!4d55.2707828!3m4!1s0x3e5f43348a67e24b:0xff45e502e1ceb7e2!8m2!3d25.197197!4d55.2743764" target="_blank">
+            Burj Khalifa
+            <!-- OJALA -->
+          </a>
+          </p>
+        </ul>
+      </div>
+      <div class="linea1"></div>
+      <br>
+      <h6 class="titulos"><u>Redes Sociales</u></h6>
+      <ul>
+        <li><u>Facebook: </u></li>
+        <p class="clave">
+          <a href="https://www.facebook.com/ivan.bernardo.777" target="_blank">Ivan Bernardo</a>
+        </p>
+
+        <li><u>Instagram: </u></li>
+        <p class="clave">
+          <a href="https://www.instagram.com/ivieze090/?next=%2F" target="_blank">IviEze090</a>
+        </p>
+
+        <li>Linkedin: </li>
+        <p class="clave">
+          <a href="https://www.linkedin.com/in/ivan-bernardo-137572221/" target="_blank">Ivan Bernardo</a>
+        </p>
+      </ul>
+    </div>
+  </div>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Ivan Bernardo</a>
+            <a class="navbar-brand"><button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+              Contacto
+            </button></a>
+            <p style="text-align: center; position: relative; margin-left: 675px; color: aliceblue;">Ivan Bernardo</p>
             <div class="collapse navbar-collapse" id="collapsibleNavbar"></div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="https://www.instagram.com/ivieze090/?next=%2F" target="_blank"> <img src="ig.png" alt="Instagram" width="50" height="40"> </a>
-                      </li>1
-                      <li class="nav-item">
-                        <a href="https://www.linkedin.com/in/ivan-bernardo-137572221/" target="_blank"><img src="lin.png" alt="Linkedin" width="50" height="40"></a>
+                        <a class="nav-link" href="#section1" id="educacion" onclick="funcion">Educacion</a>
                       </li>
                       <li class="nav-item">
-                        <a href="https://www.facebook.com/ivan.bernardo.777" target="_blank"><img src="face.png" alt="Facebook" width="50" height="40"></a>
+                        <a class="nav-link" href="#section2" id="experiencia" onclick="funcion1">Experiencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#section3">Habilidades</a>
                       </li>
                 </ul>
         </div>
     </nav>
-    <div class="container mt-3">
-      <img id="img" src="yo.jpg" class="rounded-circle d-block mx-auto img-thumbnail" alt="Imagen de Ivan Bernardo" width="150px" height="70px">
+    <div style="margin-right: -160px;">
+      <div class="imagen" style="margin-bottom: -70px"><img class="tecnica" src="tecnica.jpeg" alt="Tecnica 6" style="margin-bottom: 60px"></div>   
+      <div class="imagen" style="margin-bottom: -70px"><img id="animate" class="impresora"src="impresora.png"></div>
     </div>
     
+    
 
-    <script src="cv.js"></script>
+    <div class="cuadrado" id="circulo"></div>
+    <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+        <h1>Educacion</h1>
+        <p id="aparece"> Recibido en tecnico electronico en 2022, en la escuela Eduacion Secundaria Tecnica N*6.<br> 
+            He realizado algnunos cursos en Eduacion IT.<br>
+            Ahora, estoy realizando el curso gratuito de Argentina Programa 4.0.<br><br>
+            <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo3" id="cursoss">Cursos</button>
+            <div id="demo3" class="collapse">
+              <ul>
+                <li>Introduccion a redes</li>
+                <li>Introduccion a bases de datos y SQL</li>
+                <li>Introduccion a Linux</li>
+                <li>Operador Linux</li>
+                <li>Argentina Programa 4.0, primera etapa (En proceso)</li><br>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#demo1" id="cursoss">Progreso Argentina programa</button>
+                      <div id="demo1" class="collapse">
+                        <div class="progress">
+                          <div class="progress-bar btn btn-dark" style="width: 90%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </ul>
+              <!--<div class="progress"><div class="progress-bar" style="width:90%"></div>
+              </div>-->
+            </div>
+          </p>
+    </div>
+      
+      <div data-aos="zoom-in" data-aos-duration="750" data-aos-easing="ease-out" data-aos-anchor-placement="top-bottom">
+        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+          <h1>Experiencia</h1>
+            <p>En el 7mo año de secundaria, realice las practicas profesionalizantes en el <a href="https://www.instagram.com/citlamok/?hl=es" target="_blank">CITlAM</a>.
+              Alli, me desempeñaba en el area de impresoras 3D. Pude aprender diseño 3D, y como imprimirlo modificando los valores de impresion sobre la calidad del producto.
+              Tambien, aprendi las partes internas de estas.
+            </p>
+          </div>
+      </div>
+      
+      <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <h1>Habilidades</h1><br>
+
+          <table class="table table-hover">
+            <tbody>
+              <tr>  
+                <th><p class="centrado">Capacidades sociales</p></th>
+
+              <td>
+                  <div class="progress"> 
+                    <div class="progress-bar" style="width:70%">70%</div>
+                  </div>
+              </td>
+            </tr>
+            
+
+        
+            <tr>
+              <th>
+                <p class="centrado">Trabajo en equipo</p>
+            </th>
+              
+              <td>
+                <div class="progress"> 
+                  <div class="progress-bar" style="width:80%">80%</div>
+                </div>
+            
+              </td>
+            </tr>
+          
+
+      
+            <tr>
+              <th>
+                <p class="centrado">Ingles</p>
+              </th>
+              <td>
+                <div class="progress"> 
+                  <div class="progress-bar" style="width:50%">50%</div>
+                </div>
+              </td>
+            </tr>
+
+            
+            <tr>
+              <th> 
+                <p class="centrado">Programacion BACKEND</p>
+              </th>
+              
+              <td>
+                <div class="progress"> 
+                  <div class="progress-bar" style="width:25%">25%</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p class="centrado">Programacion FRONTEND</p>
+              </th>
+              <td>
+                <div class="progress"> 
+                    <div class="progress-bar" style="width:50%">50%</div>
+                  </div>
+              </td>
+            </tr>
+        </div>
+      </div>
+
+        
+        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="cv.js" defer></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
 

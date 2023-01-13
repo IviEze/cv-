@@ -1,4 +1,7 @@
+
+
 nav{
+    font-family: "Sofia", sans-serif;
     height: 100px;
 }
 
@@ -8,41 +11,77 @@ nav{
     z-index:1;
 }
 
-.circulo {
-    width: 30px;
-    height: 30px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: cyan;
+.tecnica {
+    width: 50px;
+    height: 50px;
     position: relative;
     right: -85%;
     top: 75px;
-    animation: movimiento 3s;
-    animation-iteration-count: 3;
-
 }
 
-.circulo:hover{
-
-    animation-play-state: paused;
-
-}
-    @keyframes movimiento{
-        0% {right:-85%;}
-        50% {right: -75%;}
-        75% {animation-delay :5s;}
-        100% {right:-85%;}
-    }
-
-.circulo1 {
+.impresora{
     width: 50px;
-    height: 50px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: grey;
+    top: 30px;
+    right: -79%;
     position: relative;
-    right: -91%;
-    top: 75px;
+    padding: 0%;
+    z-index: 1;
+}
+
+.progress {
+    text-align: center;
+    margin-right: 100px;
+    height: 20px;
+    width: 100%;
+    border: 1px solid #428bca;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+}
+
+.progress-bar{
+    height: 100%;
+    background: hsl(60, 68%, 50%);
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+    color:  black;
+}
+
+.centrado{
+    margin-left: 50px;
+}
+
+
+.lineas{
+    border: 1px;
+    background-color: white;
+    height: 2.5px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.offcanvas{
+    background-color: rgb(37, 36, 64);
+    color: white;
+}
+
+.clave{
+    margin-left: 15px;
+}
+
+.linea1{
+    border: 1px;
+    background-color: rosybrown;
+    height: 2.5px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.titulos{
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+     
 }
